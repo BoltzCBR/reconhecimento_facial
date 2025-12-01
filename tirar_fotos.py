@@ -6,10 +6,7 @@ os.makedirs(DATASET_DIR, exist_ok=True)
 
 
 def tirar_fotos():
-    """
-    Abre a webcam, pede o nome da pessoa e guarda várias fotos do rosto
-    numa pasta dataset/<nome>.
-    """
+    
     nome = input("Escreve o nome da pessoa (sem espaços): ").strip()
 
     # Criar pasta específica para essa pessoa
@@ -85,3 +82,4 @@ def tirar_fotos():
 if __name__ == "__main__":
 
     tirar_fotos()
+
