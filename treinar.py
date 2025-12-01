@@ -9,10 +9,7 @@ os.makedirs(TRAINER_DIR, exist_ok=True)
 
 
 def treinar():
-    """
-    Lê as imagens do dataset, extrai as faces e treina o modelo LBPH.
-    Guarda o modelo e o mapeamento de IDs para nomes na pasta trainer/.
-    """
+   
     recognizer = cv2.face.LBPHFaceRecognizer_create()
     detector_face = cv2.CascadeClassifier(
         cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
@@ -79,4 +76,5 @@ def treinar():
 
 
 if __name__ == "__main__":
+
     treinar()   
