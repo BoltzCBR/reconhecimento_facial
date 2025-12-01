@@ -59,10 +59,10 @@ def reconhecer():
             else:
                 nome = "Desconhecido"
 
-            # Desenhar retângulo à volta da cara
+           
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-            # Mostrar o nome por cima da cara
+            
             cv2.rectangle(frame, (x, y - 30), (x + w, y), (0, 255, 0), cv2.FILLED)
             cv2.putText(
                 frame,
@@ -86,3 +86,4 @@ def reconhecer():
 
 if __name__ == "__main__":
     reconhecer()
+
