@@ -1,7 +1,6 @@
 import cv2
 import os
 
-# Pasta onde vão ficar guardadas as fotos de todas as pessoas
 DATASET_DIR = "dataset"
 os.makedirs(DATASET_DIR, exist_ok=True)
 
@@ -84,4 +83,5 @@ def tirar_fotos():
 
 
 if __name__ == "__main__":
+
     tirar_fotos()
